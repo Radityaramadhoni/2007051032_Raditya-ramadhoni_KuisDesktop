@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="576.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="buku.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="295.0" layoutY="352.0" onAction="#handleButtonAction" text="Save" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label fx:id="label1" layoutX="374.0" layoutY="365.0" minHeight="16" minWidth="69" />
+      <Label layoutX="242.0" layoutY="27.0" text="DATA BUKU">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="48.0" layoutY="119.0" prefHeight="20.0" prefWidth="144.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField id="tfID" fx:id="tfID" layoutX="223.0" layoutY="114.0" prefHeight="30.0" prefWidth="219.0" promptText="Input NPM" />
+      <TextField id="tfNama" fx:id="tfNama" layoutX="223.0" layoutY="153.0" prefHeight="30.0" prefWidth="219.0" promptText="Input ID" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="46.0" layoutY="158.0" prefHeight="20.0" prefWidth="144.0" text="Nama">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="48.0" layoutY="277.0" prefHeight="20.0" prefWidth="144.0" text="Tanggal terbit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker id="dpterbit" fx:id="dpterbit" layoutX="223.0" layoutY="272.0" prefHeight="30.0" prefWidth="219.0" promptText="Pilih Tanggal" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="51.0" layoutY="195.0" prefHeight="20.0" prefWidth="144.0" text="Jenis Buku">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="51.0" layoutY="234.0" prefHeight="20.0" prefWidth="144.0" text="Nama penerbit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox id="cbpenerbit" fx:id="cbpenerbit" layoutX="223.0" layoutY="229.0" prefHeight="30.0" prefWidth="219.0" promptText="Pilih Nama Penerbit" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="48.0" layoutY="314.0" prefHeight="20.0" prefWidth="144.0" text="Harga">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField id="tfHarga" fx:id="tfHarga" layoutX="223.0" layoutY="309.0" prefHeight="30.0" prefWidth="219.0" promptText="Harga" />
+      <RadioButton id="rdPengetahuan" fx:id="rdPengetahuan" layoutX="223.0" layoutY="197.0" mnemonicParsing="false" text="Pengetahuan">
+         <toggleGroup>
+            <ToggleGroup fx:id="jenis" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton id="rdFiksi" fx:id="rdFiksi" layoutX="322.0" layoutY="197.0" mnemonicParsing="false" text="Fiksi">
+         <toggleGroup>
+            <ToggleGroup fx:id="jenis" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton id="rdNonfiksi" fx:id="rdNonfiksi" layoutX="376.0" layoutY="196.0" mnemonicParsing="false" text="Nonfiksi">
+         <toggleGroup>
+            <ToggleGroup fx:id="jenis" />
+         </toggleGroup>
+      </RadioButton>
+    </children>
+</AnchorPane>
